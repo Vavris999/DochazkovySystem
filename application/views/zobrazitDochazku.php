@@ -46,9 +46,10 @@ foreach($dochazka as $row){
     }else{
     echo "<td>$row->odchodZObedu</td>";
     }
-  
+    if($row->idDochazka != NULL){
     echo "<td>".anchor('/upravitDochazku/' .$row->idDochazka, 'Upravit')."</td>";
     echo "<td>".anchor('/smazatDochazku/' .$row->idDochazka, 'Smazat')."</td>";
+    }
     ?>
     
   </tr>

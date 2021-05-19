@@ -121,7 +121,7 @@ class Mdochazka extends CI_Model {
         $this->db->delete('osoba');
     }
 
-    public function delDochazkaZamestnanec($idZamestnance) {
+    public function delDochazkaZamestnance($idZamestnance) {
         $this->db->where('idOsoba', $idZamestnance);
         $this->db->delete('dochazka');
         
